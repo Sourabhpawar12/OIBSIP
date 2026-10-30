@@ -1,75 +1,75 @@
-# Number Guessing Game
+# ATM Interface – Java Development
 
-## Project Overview
-The Number Guessing Game is a simple Java console-based application developed as part of the OASIS INFOBYTE Java Development Internship.
-
-The computer randomly selects a number between 1 and 100, and the player tries to guess it within 7 attempts.
+## Project Description
+This project is a console-based ATM Interface developed using Java. It simulates basic banking operations and allows users to securely log in using a User ID and PIN.
 
 ## Features
-- Generates a random number between 1 and 100.
-- Provides hints such as "Too High!" and "Too Low!".
-- Allows a maximum of 7 attempts per round.
-- Validates user input.
-- Displays the score and rounds played.
-- Allows the player to play multiple rounds.
+- User authentication with User ID and PIN.
+- Access denied after 3 incorrect login attempts.
+- Check account balance.
+- Deposit money.
+- Withdraw money with balance validation.
+- Transfer money between accounts.
+- Transaction history using ArrayList.
+- Input validation.
+- Exit option.
 
 ## Technologies Used
 - Java
-- Java Random class
-- Java Scanner class
-- VS Code
-- JDK 24
+- Object-Oriented Programming (OOP)
+- ArrayList
+- Scanner
+- Java Date and Time API
 
-## How to Run the Project
-
-### Step 1: Clone or Download
-Download this project or clone the repository from GitHub.
-
-### Step 2: Open the Project Folder
-Open the project folder in VS Code or Command Prompt.
-
-### Step 3: Compile the Java Program
-Run the following command:
-
-```bash
-javac NumberGuessingGame.java
+## Project Structure
+```text
+JavaDevelopment-Task3-ATMInterface/
+│
+├── Main.java
+├── ATM.java
+├── Account.java
+├── Bank.java
+├── Transaction.java
+└── README.md
 ```
 
-### Step 4: Run the Program
-Run:
+## Demo Login Credentials
+
+| User ID | PIN | Initial Balance |
+|---|---|---:|
+| user1 | 1234 | ₹5000 |
+| user2 | 4321 | ₹3000 |
+
+## How to Run
+
+1. Open the project folder in VS Code.
+2. Open the terminal.
+3. Compile the Java files:
 
 ```bash
-java NumberGuessingGame
+javac Main.java ATM.java Account.java Bank.java Transaction.java
 ```
 
-## How to Play
-1. Start the program.
-2. Enter a number between 1 and 100.
-3. Follow the hints displayed by the game.
-4. Try to guess the number within 7 attempts.
-5. Choose whether to play another round.
+4. Run the application:
 
-## Testing
-The following scenarios should be tested:
-- Starting the game successfully.
-- Guessing a number that is too high or too low.
-- Guessing the correct number.
-- Entering invalid text.
-- Entering a number outside the permitted range.
-- Reaching the maximum number of attempts.
-- Playing another round and exiting the game.
+```bash
+java Main
+```
 
 ## Learning Outcomes
-- Understanding Java basics.
-- Using loops and conditional statements.
-- Generating random numbers.
-- Handling invalid user input.
-- Using Git and GitHub for project submission.
+- Practised Java fundamentals.
+- Learned Object-Oriented Programming concepts.
+- Worked with multiple Java classes.
+- Used ArrayList to maintain transaction history.
+- Implemented banking operations and input validation.
 
-## Internship
-**Organization:** OASIS INFOBYTE  
-**Track:** Java Development  
-**Project:** Number Guessing Game
+## Limitations
+- This is an educational ATM simulation, not a real banking application.
+- Account data and transaction history are stored in memory.
+- Data resets when the application is closed.
 
 ## Author
 Sourabh Pawar
+
+## Internship
+OASIS INFOBYTE – Java Development Internship
